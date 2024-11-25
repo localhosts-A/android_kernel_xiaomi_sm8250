@@ -5,7 +5,7 @@
 # Ensure the script exits on error
 set -e
 
-pwd
+current_dir=$(pwd)
 
 if [ ! -d "$HOME/Clang/bin" ]; then
     mkdir -p $HOME/Clang
@@ -13,6 +13,7 @@ if [ ! -d "$HOME/Clang/bin" ]; then
     wget https://github.com/ZyCromerZ/Clang/releases/download/20.0.0git-20241125-release/Clang-20.0.0git-20241125.tar.gz
     tar -xvf Clang-20.0.0git-20241125.tar.gz
     rm Clang-20.0.0git-20241125.tar.gz
+    cd "$current_dir"
 fi
 
 TOOLCHAIN_PATH=$HOME/Clang/bin
