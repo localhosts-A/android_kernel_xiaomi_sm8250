@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-  with:
-    fetch-depth: 1
+      with:
+        fetch-depth: 1
     - name: 更新环境
       run: sudo apt update && sudo apt install build-essential git curl wget bison flex zip bc cpio libssl-dev ccache -y
     - name: 编译内核
