@@ -5,6 +5,8 @@
 # Ensure the script exits on error
 set -e
 
+pwd
+
 if [ ! -d "$HOME/Clang/bin" ]; then
     mkdir -p $HOME/Clang
     cd $HOME/Clang
