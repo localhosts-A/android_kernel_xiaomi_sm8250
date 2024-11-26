@@ -19,3 +19,7 @@ jobs:
       run: sudo apt update && sudo apt install build-essential git curl wget bison flex zip bc cpio libssl-dev ccache -y
     - name: 编译内核
       run: bash build.sh lmi
+    - uses: actions/upload-artifact@v4
+      with:
+        name: Kernel
+        path: Kernel_MIUI_lmi_*.zip
