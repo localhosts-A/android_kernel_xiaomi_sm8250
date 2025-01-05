@@ -226,7 +226,7 @@ echo "Build for MIUI finished."
 
 cd anykernel 
 
-ZIP_FILENAME=Kernel_MIUI_${TARGET_DEVICE}_${KSU_ZIP_STR}_$(date +'%Y%m%d_%H%M%S')_anykernel3_${GIT_COMMIT_ID}.zip
+ZIP_FILENAME=Kernel_MIUI_${TARGET_DEVICE}_anykernel3.zip
 
 zip -r9 $ZIP_FILENAME ./* -x .git .gitignore out/ ./*.zip
 
