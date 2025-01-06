@@ -195,6 +195,7 @@ scripts/config --file out/.config \
     -d CONFIG_MODULE_SIG_HASH \
     -e MI_FRAGMENTION \
     -e BOOTUP_RECLAIM \
+    -e KSU_SUSFS \
 
 make $MAKE_ARGS -j$(nproc)
 
